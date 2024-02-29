@@ -10,6 +10,12 @@ import com.example.demo.dto.LivroDTO;
 import com.example.demo.entities.Livro;
 import com.example.demo.repositories.LivroRepository;
 
+@Service
+
+public class LivroService {
+
+private final LivroRepository livroRepository;
+
 @Autowired
 public LivroService (LivroRepository livroRepository) {
 	this.livroRepository = livroRepository;
